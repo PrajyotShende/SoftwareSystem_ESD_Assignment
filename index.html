@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of India - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0F7FA;
+            color: #004D40;
+        }
+
+        .navbar {
+            background-color: #50c1fa;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .hero-section {
+            background-image: url('photo2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-text {
+            position: relative;
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            color: #00695C;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .card-title {
+            color: #00838F;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #004D40;
+        }
+
+        .rating {
+            font-size: 1rem;
+            margin-top: 0.3rem;
+            color: #FFD700;
+        }
+
+        .btn-order {
+            background-color: #00526d;
+            color: #fff;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .btn-order:hover {
+            background-color: #00332E;
+        }
+        
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Taste of India</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1>Welcome to Taste of India</h1>
+        <p>Explore the rich flavors of Indian cuisine</p>
+    </div>
+</div>
+
+<div class="menu-section" id="menu">
+    <h2>Our Special Dishes</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Samosa" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Samosa</h5>
+                            <span class="price">₹20</span>
+                        </div>
+                        <p class="rating">★★★★☆</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Dhokla" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Dhokla</h5>
+                            <span class="price">₹50</span>
+                        </div>
+                        <p class="rating">★★★★☆</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Pani Puri" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Pani Puri</h5>
+                            <span class="price">₹30</span>
+                        </div>
+                        <p class="rating">★★★☆☆</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Chaat" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Chaat</h5>
+                            <span class="price">₹40</span>
+                        </div>
+                        <p class="rating">★★★★☆</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Biryani" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Biryani</h5>
+                            <span class="price">₹150</span>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="samosa.png" alt="Gulab Jamun" class="card-img-top">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Gulab Jamun</h5>
+                            <span class="price">₹25</span>
+                        </div>
+                        <p class="rating">★★★★★</p>
+                        <button class="btn btn-order">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
